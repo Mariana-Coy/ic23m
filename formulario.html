@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---->
+</head>
+<body>
+    <br>
+    <a href="index.html" class="button"><i class="fas fa-arrow-left"></i> Regresar al Inicio</a>
+    <div id="contenedor">
+        <form method="get"> <!--siempre se pone para hacer un formulario y que arroje la info, se cambia de post a get para ver  -->
+            <p>
+                <label for="nombre">Nombre</label><br><!--equiquetas en linea-->
+                <input type="text" id="nombre" name="nombre" autofocus required placeholder="ingresa tu nombre"> <!---name es para back donde se ve en la pagina, puede llevar acentos última propiedad autofocus enfoca el cursos en el formulario y solo se puede ocupar una vez-->
+            </p>
+
+            <p>
+                <label for="apellido paterno">Apellido Paterno</label><br><!--equiquetas en linea-->
+                <input type="text" id="apellido paterno" size="40" required  placeholder="ingresa tu apellido" name="apellido paterno"> <!---name es para back donde se ve en la pagina, puede llevar acentos-->
+            </p>
+
+            <p>
+                <label for="apellido Materno">Apellido Materno</label><br><br><!--equiquetas en linea-->
+                <input type="text" id="apellido Materno" size="40" required  placeholder="ingresa tu apellido" name="apellido Materno"> <!---name es para back donde se ve en la pagina, puede llevar acentos-->
+            </p>
+
+            <p>
+                <label for="estatus">Estatus</label><br>
+                <input type="text" name="estatus" value="activo" readonly title="Este valor es solo lectura"><!--readonly es para hacer que solo sea de lectura el texto, title="Este valor es solo lectura"-->
+            </p>
+
+            <p>
+                <label for="contraseña"> Su contraseña</label><br><!--es patra ocultar datos como contraseña-->
+                <input type="password" id="contraseña" name="contraseña" required placeholder="Ejemplo: Antonio$0#">
+            </p>
+
+            <p>
+                <input type="hidden" name="nip" value="968"><!-- es solo texto y no se ve a diferencia del label-->
+            </p>
+            
+            <p>
+            <label for="navegador"> Navegador favorito</label>
+            <select id="navegador" name="navegador" required>
+                <option value="chrome"> Google Chrome</option>
+                <option value="opera"> Opera</option>
+                <option value="edge"> Edge </option>
+                <option value="safari"> Safari</option>
+                <option value="firefox"> Firefox</option>
+            </select>
+
+            </p>
+
+            <p>
+                <input type="submit" name="enviar" value="enviar"> <!--bonton más sutil, muestra el nombre de la pagina-->
+            </p>
+            
+            
+
+        
+
+
+        </form>
+    </div>
+</body>
+</html>
